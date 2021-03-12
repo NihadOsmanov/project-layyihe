@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+      integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Main start-->
+    <main id="mainContent">
+      <div class="bredcrumb-wrapper">
+        <div class="container">
+          <ul class="bredcrumb">
+            <li class="bredcrumb-item">
+              <a href="#">Home </a><span> > </span>
+            </li>
+            <li class="bredcrumb-item">
+              <span>Account</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="section-header text-left">
+          <h2>My Account</h2>
+        </div>
+        <div class="login-page">
+          <div class="row justify-content-between">
+            <div class="col-12 col-sm-6 col-md-5 mb-5">
+              <div id="CustomerLoginForm" class="form-vertical">
+                <h3>Reset Your Password</h3>
+                <p>We will send you an email to reset your password</p>
+                <form id="customer-login" onsubmit="return validation()">
+                  <label for="email">Email*</label><br />
+                  <input type="email" name="email" id="email" /><br /><br />
+                  <span id="mail" class="text"></span><br /><br />
+                  <div class="button-group">
+                    <input
+                      type="submit"
+                      class="btn btn-secondary"
+                      value="LOGIN"
+                    /><br />
+                    <input
+                      type="submit"
+                      class="btn btn-primary"
+                      value="CANCEL"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-5 wrapper">
+              <div class="new-customer-wrapper">
+                <h3>New Customer</h3>
+                <p>Register Account</p>
+                <p>
+                  By creating an account you will be able to shop faster, be up
+                  to date on an order's status, and keep track of the orders you
+                  have previously made.
+                </p>
+                <form id="register-form">
+                  <label for="text">First Name</label><br />
+                  <input type="text" name="fname" id="text" /><br /><br />
+                  <label for="text">Last Name</label><br />
+                  <input type="text" name="lname" id="text" /><br /><br />
+                  <label for="email">Email*</label><br />
+                  <input type="email" name="email" id="email" /><br /><br />
+                  <label for="pass">Password*</label><br />
+                  <input type="password" name="pass" id="pass" /><br /><br />
+                  <div class="button-group">
+                    <input
+                      type="submit"
+                      class="btn btn-secondary"
+                      value="CREATE ACCOUNT"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Main end-->
+    <script src="js/main.js
+    "></script>
+  </body>
+</html>
